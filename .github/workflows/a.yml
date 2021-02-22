@@ -1,0 +1,10 @@
+on:
+  pull_request:
+    paths:
+      - a/**
+
+jobs:
+  test-a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo a
